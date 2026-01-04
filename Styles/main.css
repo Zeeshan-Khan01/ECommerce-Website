@@ -13,6 +13,7 @@
     flex-direction: row;
     z-index: 1000;
     position: fixed;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .search-bar
@@ -25,7 +26,6 @@
     width: 500px;
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
 }
 
 nav
@@ -41,11 +41,21 @@ a
     font-weight: bold;
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #c4411a;
+    background-color: rgba(224, 81, 29, 0.1);
+    transform: scale(1.05);
+    text-decoration: none;
 }
 
 .QuibbleLogo
 {
-  margin-bottom: 10px;
+  
 }
 
 .cart-icon, .notification-icon
@@ -85,6 +95,7 @@ a
         gap:0px;
         flex-direction: row;
         justify-content: space-around;
+        padding: 0 10px;
     }
     nav {
         display: none;
@@ -137,6 +148,38 @@ a
 
 }
 
+@media (max-width: 1024px) {
+    .search-bar {
+        width: 300px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .navbar {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .search-bar {
+        width: 150px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .navbar {
+        padding: 0 5px;
+    }
+
+    .QuibbleLogo {
+        width: 80px;
+    }
+}
+
 
 
 /* Carousel*/
@@ -154,6 +197,10 @@ a
     font-size: 2.5rem;
     color: #333;
     font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 .product-container {
