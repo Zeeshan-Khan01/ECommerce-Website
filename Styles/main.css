@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: row;
     z-index: 1000;
-    position: fixed;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -286,45 +285,6 @@ a:hover {
 }
 
 
-/* Media Queries for Carousel Buttons */
-
-/* Tablet styles */
-@media (max-width: 1024px) {
-    .buy-now-btn1 {
-        font-size: 16px;
-        padding: 5px 20px;
-        bottom: 20px;
-    }
-}
-
-/* Small tablet styles */
-@media (max-width: 768px) {
-    .buy-now-btn1 {
-        font-size: 10px;
-        padding: 3px 10px;
-        bottom: 10px;
-        margin-left: 3px;
-    }
-}
-
-/* Mobile styles */
-@media (max-width: 480px) {
-    .buy-now-btn1 {
-        font-size: 12px;
-        padding: 6px 20px;
-        bottom: 10px;
-        left: 50%;
-    }
-}
-
-/* Large desktop styles */
-@media (min-width: 1200px) {
-    .buy-now-btn1{
-        font-size: 20px;
-        padding: 12px 60px;
-        bottom: 25px;
-    }
-}
 
 /*------------ Product Section -------------*/
 .heading {
@@ -413,6 +373,8 @@ letter-spacing: 2px;
         width: 35%;
         background-size: cover;   
     }
+
+
 }
 
 
@@ -420,5 +382,55 @@ letter-spacing: 2px;
     .product-card {
         width: 60%;
         background-size: cover;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.offerd {
+    font-size: 1.1rem; /* Base font size for medium screens */
+    font-weight: bold;
+color: white
+;    text-align: center;
+    background: linear-gradient(45deg, #0e31f8, #000000);
+    padding: 0px 15px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 20px;
+    
+}
+
+
+
+/* Media query for small devices (e.g., phones) */
+@media (max-width: 600px) {
+    .offerd {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+/* Media query for medium devices (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .offerd {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* Media query for large devices (e.g., desktops) */
+@media (min-width: 1025px) {
+    .offerd {
+        font-size: 16px;
     }
 }
