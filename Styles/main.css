@@ -397,40 +397,166 @@ letter-spacing: 2px;
 
 
 
+
+
+
+
+
+
 .offerd {
-    font-size: 1.1rem; /* Base font size for medium screens */
-    font-weight: bold;
-color: white
-;    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+
     background: linear-gradient(45deg, #0e31f8, #000000);
-    padding: 0px 15px;
-    border-radius: 4px;
+    padding: 5px 15px 2px 20px;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px 20px;
-    
+    margin: 0 auto 10px auto;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.offerd:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 
+
+
+.subp {
+    background-color: rgb(248, 239, 239);
+    width: 100%;
+    max-width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
 
 /* Media query for small devices (e.g., phones) */
 @media (max-width: 600px) {
-    .offerd {
-        font-size: 12px;
-        padding: 8px 16px;
-    }
-}
-
-/* Media query for medium devices (e.g., tablets) */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .offerd {
+    .subp {
+        width: 90%;
+        margin: 5px auto;
         font-size: 14px;
-        padding: 10px 20px;
+        padding: 8px;
     }
 }
 
-/* Media query for large devices (e.g., desktops) */
-@media (min-width: 1025px) {
-    .offerd {
-        font-size: 16px;
-    }
+
+/* ===== FIXED & RESPONSIVE CAROUSEL CAPTION ===== */
+
+.carousel-caption {
+  position: absolute;
+  left: 57.3%;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+  bottom: 2.0rem;
+
+  display: flex;
+  
+  background-color: "black";
+  justify-content: left;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  max-width: 92%;
+  padding: 0.25rem 0.5rem;
+  box-sizing: border-box;
+
 }
+
+/* Buy Now Button */
+.offerd {
+  margin: 0;
+  display: inline-block;
+  font-size: 1.1rem;
+  color: white;
+  background: linear-gradient(45deg, #0e31f8, #000000);
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+
+
+
+.offerd:hover, .offerd2:hover {
+  transform: scale(1.05);
+}
+
+/* Paragraph box */
+.subp {
+  background-color: rgb(248, 239, 239);
+  max-width: 350px;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ===== MOBILE =====  DONE!*/
+@media (max-width: 700px) {
+  
+
+    .carousel-caption {
+        height: auto;
+        align-items: right;
+        justify-content: right;
+        margin-bottom: -20px;
+        ; margin-left: 10px;
+    }
+    
+  .offerd {
+    font-size: 4px;
+    padding: 8px 16px;
+    background-color: aqua;
+
+}
+
+  .subp {
+    width: 100%;
+    font-size: 4px;
+    margin-left: 100px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    margin-bottom: -5px;
+    padding: 5px 17px 5px 17px;
+  }
+}
+
+/* ===== TABLET ===== DONE!*/
+@media (min-width: 701px) and (max-width: 1624px) {
+  .carousel-caption {
+    bottom: 1.5rem;
+    justify-content: right;
+    align-items: right;
+    margin-left: 100px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .subp {
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: -10px;
+    padding: 0px 10px 0px 10px 
+    ; color: black
+  }
+
+}
+
+
+
