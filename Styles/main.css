@@ -418,7 +418,29 @@ letter-spacing: 2px;
     display: block;
 }
 
-.offerd:hover {
+
+
+
+
+.offerd2 {
+    font-size: 1.1rem;
+    color: white;
+
+    background: linear-gradient(45deg, #0e31f8, #000000);
+    padding: 5px 15px 2px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 10px auto;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin-left: -210px;
+    padding: 10px;
+}
+
+
+.offerd:hover, .offerd2:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
@@ -523,7 +545,6 @@ letter-spacing: 2px;
     font-size: 4px;
     padding: 8px 16px;
     background-color: aqua;
-
 }
 
   .subp {
@@ -557,6 +578,4 @@ letter-spacing: 2px;
   }
 
 }
-
-
 
