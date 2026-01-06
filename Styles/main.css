@@ -11,20 +11,42 @@
     padding: 0 20px;
     display: flex;
     flex-direction: row;
-    z-index: 1000;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
 }
 
-.search-bar
-{
-    display: flex;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 10px 40px ;
-    width: 500px;
-    border: none;
-    box-shadow: 0 2px 1000px 0px rgba(255, 60, 0);
+.search-wrapper {
+    position: relative;
+    
+}
+
+.search {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    z-index: 2;          /* 🔥 icon upar rahe */
+    background-color: hsl(0, 0%, 100%);
+    padding: 6px;
+    border-radius: 50%;
+    width: 30px;
+}
+
+.search-bar {
+    width: 500PX;
+    background-color: #fff;
+    border-radius: 125px;
+    padding: 10px 20px 10px 55px; 
+    border: solid 1.8px rgb(214, 86, 0);
+    box-shadow: 0 2px 200px rgba(255, 60, 0, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+
+.QuibbleLogo{
+    margin-bottom: 10px;
+
 }
 
 nav
@@ -33,6 +55,7 @@ nav
     gap: 5px;
 
 }
+
 
 a
 {
@@ -70,6 +93,7 @@ a:hover {
 {
     display: flex;
     gap: 20px;
+
 }
 
 .hamburger {
@@ -84,9 +108,11 @@ a:hover {
     height: 3px;
     background-color: #e0511d;
     margin: 3px 0;
-    transition: 0.3s;
-}
+    transition: 0.7s;
+    transition: all;
+    transition: ease-in;
 
+}
 
 
 /*NAVBAR MEDIA QUERY */
@@ -103,7 +129,7 @@ a:hover {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 50px;
         left: 0;
         width: 100%;
         background-color: #fff5f5;
@@ -142,6 +168,7 @@ a:hover {
     .QuibbleLogo
     {
         width: 120px;
+     
     }
 
     .cta-btn{
@@ -203,6 +230,24 @@ a:hover {
     }
 }
 
+
+
+@media (min-width: 1025px) and (max-width: 1524px) {
+
+    .navbar {
+        gap: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+        position: relative;
+        }
+
+    .search-bar {
+        width: 300px;
+    }
+}
+
+
 @media (max-width: 576px) {
     .search-bar {
         width: 150px;
@@ -213,8 +258,11 @@ a:hover {
     .QuibbleLogo {
         width: 100px;
     }
+    
+    .search {
+        left: 10px;
+    }
 }
-
 
 
 
