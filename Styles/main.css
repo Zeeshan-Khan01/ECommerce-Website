@@ -2,7 +2,7 @@
 .navbar
 {
     width: 100%;
-    height: 60px;
+
     background-color: #fff5f5;
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,8 @@
 nav
 {
     display: flex;
-    gap: 20px;
+    gap: 5px;
+
 }
 
 a
@@ -38,7 +39,7 @@ a
     text-decoration: none;
     color: #e0511d;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px 10px;
     border-radius: 5px;
@@ -64,6 +65,12 @@ a:hover {
     padding: 8px;
 }
 
+
+.cartsicons
+{
+    display: flex;
+    gap: 20px;
+}
 
 .hamburger {
     display: none;
@@ -91,9 +98,6 @@ a:hover {
     .navbar
     {
         gap:0px;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0 10px;
     }
     nav {
         display: none;
@@ -127,19 +131,17 @@ a:hover {
     }
 
     
-
+    .search-bar {
+        width: 230px;
+    }
     .navbar {
         position: relative;
     }
 
-    .search-bar {
-        width: 180px;
-    }
 
     .QuibbleLogo
     {
-        margin-bottom: 0px;
-        width: 100px;
+        width: 120px;
     }
 
     .cta-btn{
@@ -160,7 +162,7 @@ a:hover {
         flex-direction: row;
         justify-content: space-between;
         padding: 0 20px;
-        position: relative;    
+        position: relative;
     }
 
     nav {
@@ -204,18 +206,12 @@ a:hover {
 @media (max-width: 576px) {
     .search-bar {
         width: 150px;
+        height: 40px;
     }
 
-    nav {
-        gap: 10px;
-    }
-
-    .navbar {
-        padding: 0 5px;
-        }
 
     .QuibbleLogo {
-        width: 80px;
+        width: 100px;
     }
 }
 
@@ -243,12 +239,6 @@ a:hover {
 }
 
 
-@media (max-width: 1376px) and (min-width: 900px){
-    .search-bar {
-        width: 190px;
-    }
-
-}
 
 
 
