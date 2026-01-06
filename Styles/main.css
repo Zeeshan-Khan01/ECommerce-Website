@@ -228,6 +228,11 @@ a:hover {
     .QuibbleLogo {
         width: 120px;
     }
+
+    .carousel-caption {
+    display: none !important;
+  }
+
 }
 
 
@@ -262,6 +267,11 @@ a:hover {
     .search {
         left: 10px;
     }
+
+    .carousel-caption {
+    display: none !important;
+  }
+
 }
 
 
@@ -287,6 +297,62 @@ a:hover {
 }
 
 
+/* ===== CATEGORY BAR ===== */
+.category-bar {
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+/* Desktop */
+.category-list {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+}
+
+.category-list::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+/* Category links */
+.category-list a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.category-list a:hover {
+  color: #e0511d;
+}
+
+/* "Popular" label */
+.category-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #e0511d;
+  margin-right: 5px;
+}
+
+/* ===== MOBILE VIEW ===== */
+@media (max-width: 768px) {
+  .category-list {
+    padding: 0 10px;
+    gap: 14px;
+  }
+
+  .category-list a {
+    font-size: 13px;
+  }
+}
 
 
 
