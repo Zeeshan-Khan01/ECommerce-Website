@@ -33,21 +33,16 @@
 }
 
 .search-bar {
-    width: 500PX;
     background-color: #fff;
     border-radius: 125px;
-    padding: 10px 20px 10px 55px; 
+    padding: 7px 20px 7px 55px; 
     border: solid 1.8px rgb(214, 86, 0);
     box-shadow: 0 2px 200px rgba(255, 60, 0, 0.4);
     position: relative;
     z-index: 1;
+    width: 450px;
 }
 
-
-.QuibbleLogo{
-    margin-bottom: 10px;
-
-}
 
 nav
 {
@@ -80,12 +75,13 @@ a:hover {
 .cart-icon, .notification-icon
 {
     position: relative;
-    font-size: 34px;
+    
     color: rgb(255, 255, 255);
     cursor: pointer;
     background-color: rgb(253, 84, 41);
     border-radius: 80px;
-    padding: 8px;
+    width: 30px;
+    padding: 4px;
 }
 
 
@@ -175,6 +171,9 @@ a:hover {
         width: 20px;
     }
 
+    .carousel-caption {
+        display:  none !important
+    }
     ;
 
 }
@@ -229,15 +228,17 @@ a:hover {
         width: 120px;
     }
 
-    .carousel-caption {
+
+  .carousel-caption {
     display: none !important;
   }
+
 
 }
 
 
 
-@media (min-width: 1025px) and (max-width: 1524px) {
+@media (min-width: 1025px) and (max-width: 1124px) {
 
     .navbar {
         gap: 20px;
@@ -248,7 +249,7 @@ a:hover {
         }
 
     .search-bar {
-        width: 300px;
+        width: 360px;
     }
 }
 
@@ -303,7 +304,7 @@ a:hover {
   background-color: #ffffff;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 /* Desktop */
@@ -394,7 +395,6 @@ a:hover {
 .heading {
     text-align: center;
     margin: 50px 0 30px;
-    font-size: 2.5rem;
     color: #333;
     font-weight: bold;
     font-family: 'Arial', sans-serif;
@@ -682,4 +682,5 @@ letter-spacing: 2px;
   }
 
 }
+
 
