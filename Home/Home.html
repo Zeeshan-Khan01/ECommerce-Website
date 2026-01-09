@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="../assets/Q_logo.png" />
   <title>Quibble — Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -19,8 +20,8 @@
         </ul>
     
         <div class="auth-buttons">
-            <a href="../Sign In.html" class="login">Login</a>
-            <a href="../Signup.html" class="signup">Sign Up</a>
+            <a href="Sign In.html" class="login">Login</a>
+            <a href="Signup.html" class="signup">Sign Up</a>
         </div>
     </nav>
 
@@ -31,7 +32,7 @@
         <h1>Premium products for modern life</h1>
         <p class="lead">Fast delivery • Best prices • Curated collections</p>
         <div class="hero-ctas">
-          <a class="btn btn-outline" href="signup.html">Create Account</a>
+          <a class="btn btn-outline" href="signup.html" >Create Account</a>
         </div>
 
         <div class="trust">
@@ -50,39 +51,91 @@
   </section>
 
 
-  <!-- ABOUT PREVIEW -->
-  <section class="container section about-preview">
-    <div class="about-grid">
-      <div>
-        <h2>About Quibble</h2>
-        <p>Quibble is an online store focused on high-quality products, carefully selected to make life easier and better. We combine curated selection, friendly prices, and fast delivery.</p>
-        <a class="btn btn-outline" href="about.html">Learn More</a>
-      </div> 
-      <div class="about-stats">
-        <div class="stat">
-          <strong>10k+</strong>
-          <span>Happy customers</span>
-        </div>
-        <div class="stat">
-          <strong>500+</strong>
-          <span>Products</span>
-        </div>
-      </div>
-    </div>
-  </section>
+  <main class="container section">
+    <h1>About Quibble</h1>
+    <p class="lead">We started Quibble to make thoughtfully chosen products accessible to everyone. Our mission is to combine quality with affordability and fast delivery across India.</p>
 
-  <!-- CONTACT PREVIEW -->
-  <section class="container section contact-preview">
-    <div class="contact-card">
-      <h3>Need help choosing?</h3>
-      <p>Contact our customer support for fast assistance.</p>
-      <a class="btn btn-primary" href="contact.html">Contact Us</a>
-    </div>
-  </section>
+    <section class="team-grid">
+      <article class="team-card">
+        <img src="../assets/aboutimg1.jpg" alt="Mission" style="background-size: cover; object-fit: cover;">
+        <h3>Our Mission</h3>
+        <p>Provide exceptional products and customer experience with transparent pricing.</p>
+      </article>
+      <article class="team-card">
+        <img src="../assets/aboutimg2.jpg" alt="Vision"  style="background-size: cover; object-fit: cover;">
+        <h3>Our Vision</h3>
+        <p>Be the go-to online store for curated essentials that simplify daily life.</p>
+      </article>
+      <article class="team-card">
+        <img src="../assets/aboutimg3.jpg" alt="Values"  style="background-size: cover; object-fit: cover;">
+        <h3>Core Values</h3>
+        <p>Quality, integrity, speed, and customer focus.</p>
+      </article>
+    </section>
+  </main>
 
+ 
+
+
+  <main class="container section contact-section">
+    <h1>Contact Us</h1>
+    <p class="lead">Questions about orders, products or returns? Send us a message and we'll get back within 24 hours.</p>
+
+    <div class="contact-grid">
+      <form class="contact-form" action="#" method="post" onsubmit="alert('Form submission demo — integrate backend or use email API'); return false;">
+        <label>
+          Name
+          <input type="text" name="name" required placeholder="Your name">
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="6" required placeholder="How can we help?"></textarea>
+        </label>
+
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+
+      <aside class="contact-info">
+        <h3>Customer Support</h3>
+        <p>Email: zishankhan6759@gmail.com</p>
+        <p>Phone: +91 9325521257</p>
+        <p>Address: Malegaon Nashik, Maharshtra, India</p>
+
+        <div class="map-placeholder">
+          <div class="map-container">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d355036.30579436955!2d74.50453207874571!3d20.55677386573297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1767995486355!5m2!1sen!2sin"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen
+    title="Quibble location map"></iframe>
+</div>
+
+        </iframe></div>
+      </aside>
+    </div>
+  </main>
 
 
   <script>
+    document.getElementById('navToggleContact').addEventListener('click', function () {
+      document.getElementById('mainNavContact').classList.toggle('open');
+    });
+    document.getElementById('yearContact').textContent = new Date().getFullYear();
+
+
+ 
+    document.getElementById('navToggleAbout').addEventListener('click', function () {
+      document.getElementById('mainNavAbout').classList.toggle('open');
+    });
+    document.getElementById('yearAbout').textContent = new Date().getFullYear();
+
     // small JS for nav toggle and year
     document.getElementById('navToggle').addEventListener('click', function () {
       document.getElementById('mainNav').classList.toggle('open');
