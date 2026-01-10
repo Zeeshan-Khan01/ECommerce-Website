@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quibble — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Quibble</div>
+    
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="auth-buttons">
+            <a href="../Sign In.html" class="login">Login</a>
+            <a href="../Signup.html" class="signup">Sign Up</a>
+        </div>
+    </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1>Premium products for modern life</h1>
+        <p class="lead">Fast delivery • Best prices • Curated collections</p>
+        <div class="hero-ctas">
+          <a class="btn btn-outline" href="signup.html">Create Account</a>
+        </div>
+
+        <div class="trust">
+          <div>Free shipping over ₹999</div>
+          <div>30-day returns</div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Decorative product card -->
+        <div class="product-card">
+          <img src="../assets/home.jpg" alt="Featured product">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ABOUT PREVIEW -->
+  <section class="container section about-preview">
+    <div class="about-grid">
+      <div>
+        <h2>About Quibble</h2>
+        <p>Quibble is an online store focused on high-quality products, carefully selected to make life easier and better. We combine curated selection, friendly prices, and fast delivery.</p>
+        <a class="btn btn-outline" href="about.html">Learn More</a>
+      </div> 
+      <div class="about-stats">
+        <div class="stat">
+          <strong>10k+</strong>
+          <span>Happy customers</span>
+        </div>
+        <div class="stat">
+          <strong>500+</strong>
+          <span>Products</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT PREVIEW -->
+  <section class="container section contact-preview">
+    <div class="contact-card">
+      <h3>Need help choosing?</h3>
+      <p>Contact our customer support for fast assistance.</p>
+      <a class="btn btn-primary" href="contact.html">Contact Us</a>
+    </div>
+  </section>
+
+
+
+  <script>
+    // small JS for nav toggle and year
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

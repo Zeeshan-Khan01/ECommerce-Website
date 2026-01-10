@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In Into Your Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/Q_logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ece9ff, #f5f3ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.left {
+    width: 50%;
+    padding: 130px 50px 130px 50px;
+    
+}
+
+.left h2 {
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #f4f2ff;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group span {
+    margin-right: 10px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #fa5421;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #fa723c;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.divider {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 13px;
+    color: #888;
+}
+
+
+
+.right {
+    width: 50%;
+    background: linear-gradient(135deg, #ff9462, #ff3e0e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image-box {
+    background: rgba(255,255,255,0.2);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.image-box img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .right {
+        padding: 30px 0;
+    }
+}
+
+
+/*Navbar CSS*/
+.navbar {
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff3d0d;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #ff3d0d;
+    text-decoration: underline;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+
+.auth-buttons a {
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.login {
+    color: #ff3d0d;
+    border: 1px solid #ff3d0d;;
+}
+
+.login:hover {
+
+    background-color: #fa723c;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+    color: white;
+}
+
+.signup {
+    background:  #ff3d0d;;
+    color: #ffffff;
+}
+
+.signup:hover {
+    background-color: #fa723c;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <nav class="navbar">
+        <div class="logo">Quibble</div>
+    
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    
+        <div class="auth-buttons">
+            <a href="#" class="login">Login</a>
+            <a href="./Signup.html" class="signup">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="card">
+
+        <div class="left">
+            <h2>LOGIN</h2>
+            <p class="subtitle">Welcome back! Please log in to your account</p>
+
+            <div class="input-group">
+            
+                <input type="text" placeholder="Username">
+            </div>
+
+            <div class="input-group">
+                
+                <input type="password" placeholder="Password">
+            </div>
+
+            <button class="btn">Login Now</button>
+
+        </div>
+
+        <div class="right">
+            <div class="image-box">
+                <img src="./assets/loginimg.jpg"
+                     alt="User">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

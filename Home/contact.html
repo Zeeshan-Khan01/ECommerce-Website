@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Quibble</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html">Quibble</a>
+      <nav class="main-nav" id="mainNavContact">
+        <a href="Home.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-outline" href="login.html">Login</a>
+        <a class="btn btn-primary" href="signup.html">Sign Up</a>
+        <button class="nav-toggle" id="navToggleContact" aria-label="Toggle navigation">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section contact-section">
+    <h1>Contact Us</h1>
+    <p class="lead">Questions about orders, products or returns? Send us a message and we'll get back within 24 hours.</p>
+
+    <div class="contact-grid">
+      <form class="contact-form" action="#" method="post" onsubmit="alert('Form submission demo — integrate backend or use email API'); return false;">
+        <label>
+          Name
+          <input type="text" name="name" required placeholder="Your name">
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="6" required placeholder="How can we help?"></textarea>
+        </label>
+
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+
+      <aside class="contact-info">
+        <h3>Customer Support</h3>
+        <p>Email: help@quibble.example</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: 123 Market Street, City, India</p>
+
+        <div class="map-placeholder">Map placeholder (embed Google Maps or use iframe)</div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">Quibble</a>
+        <p class="muted">Premium quality, affordable prices</p>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <p class="muted">Support</p>
+        <div class="social-row">
+          <span class="muted">help@quibble.example</span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">© <span id="yearContact"></span> Quibble — All rights reserved</div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggleContact').addEventListener('click', function () {
+      document.getElementById('mainNavContact').classList.toggle('open');
+    });
+    document.getElementById('yearContact').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
