@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -10,13 +10,13 @@
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" style="position: fixed; z-index: 10;">
         <div class="logo">Quibble</div>
     
         <ul class="nav-links">
             <li><a href="Home.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     
         <div class="auth-buttons">
@@ -29,10 +29,10 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-left">
-        <h1>Premium products for modern life</h1>
+        <h1>Premium Products for Modern Life</h1>
         <p class="lead">Fast delivery • Best prices • Curated collections</p>
         <div class="hero-ctas">
-          <a class="btn btn-outline" href="signup.html" >Create Account</a>
+          <a class="btn btn-outline mainbtn" href="signup.html">Create Account</a>
         </div>
 
         <div class="trust">
@@ -51,6 +51,7 @@
   </section>
 
 
+  <section id="about">
   <main class="container section">
     <h1>About Quibble</h1>
     <p class="lead">We started Quibble to make thoughtfully chosen products accessible to everyone. Our mission is to combine quality with affordability and fast delivery across India.</p>
@@ -73,10 +74,11 @@
       </article>
     </section>
   </main>
-
+</section>
  
 
 
+<section id="contact">
   <main class="container section contact-section">
     <h1>Contact Us</h1>
     <p class="lead">Questions about orders, products or returns? Send us a message and we'll get back within 24 hours.</p>
@@ -121,7 +123,7 @@
       </aside>
     </div>
   </main>
-
+</section>
 
   <script>
     document.getElementById('navToggleContact').addEventListener('click', function () {
